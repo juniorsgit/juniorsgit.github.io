@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Junior's Art Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <table width="100%" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center">
+                <img src="path_to_logo.png" alt="Logo" width="50" height="50">
+                <h1>Junior's Art Shop</h1>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<!-- Signup Form -->
+<div class="container mt-5">
+    <h2 class="text-center">Sign Up</h2>
+    <form class="mt-4" action="signup_success.html" method="post">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm-password" name="confirm_password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    </form>
+    <p class="text-center mt-3">
+        Already have an account? <a href="login.html">Log in</a>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <table width="100%" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center">
+                <ul>
+                    <li><a href="#terms">Terms of Use</a></li>
+                    <li><a href="#cookie">Cookie and Privacy Policy</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
