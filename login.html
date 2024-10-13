@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Junior's Art Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            padding: 10px 0; /* Increased padding */
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black; /* Default color */
+            font-weight: bold;
+            font-size: 1.2rem; /* Increased font size */
+        }
+        nav ul li a:hover {
+            color: blue; /* Change color on hover */
+            font-size: 1.25rem; /* Slightly increase size on hover */
+        }
+        /* Adjust aside section */
+        aside {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav, aside {
+                display: none; /* Hide navigation and aside on small screens */
+            }
+            .form-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <table width="100%" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center">
+                <img src="path_to_logo.png" alt="Logo" width="50" height="50">
+                <h1>Junior's Art Shop</h1>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<!-- Main Container -->
+<div class="container my-4">
+    <div class="row">
+        <!-- Navigation Column -->
+        <div class="col-md-3">
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">Shopping Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content Column -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="form-container w-100">
+                <h2 class="form-title">Login</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <p class="text-center mt-3">Don't have an account? <a href="signup.html" class="text-primary">Create one now.</a></p>
+            </div>
+        </div>
+
+        <!-- Aside Column -->
+        <div class="col-md-3">
+            <aside>
+                <h3>Advertisements</h3>
+                <p>Ad content will go here...</p>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <table width="100%" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center">
+                <ul>
+                    <li><a href="#terms">Terms of Use</a></li>
+                    <li><a href="#cookie">Cookie and Privacy Policy</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
