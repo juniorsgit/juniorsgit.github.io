@@ -83,3 +83,13 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+
+/* Error Styles */
+.error {
+    border-color: red; /* Add red border to input fields with error */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: 0.9rem; /* Font size for error messages */
+}
